@@ -15,7 +15,10 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example', require('./components/Example.vue'));
+Vue.component('coalition-form', require('./components/Form.vue'));
+Vue.component('coalition-list', require('./components/List.vue'));
+
+window.bus = new Vue();
 
 const app = new Vue({
     el: '#app'
